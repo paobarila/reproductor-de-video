@@ -1,0 +1,81 @@
+*{
+margin:0;
+padding: 0;
+box-sizing: border-box;
+}
+
+body{
+  background-color: #26B4BC;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.wraper{
+  max-inline-size: 900px;
+  margin:auto;
+  padding:2rem;
+}
+.player{
+margin-block-start: 3rem;
+position: relative;
+}
+.player video{
+  inline-size: 100%;
+
+}
+.player-tittle{
+  color:white;
+  position: absolute;
+  inset-block-start: 1rem;
+  inset-inline-start: 1.2rem;
+}
+ .player-accions{
+  position: absolute;
+  inset: 0rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap:2rem;
+ }
+ button{
+  inline-size: 32px;
+  block-size: 32px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+ }
+
+ #play{
+  background-image: url("../icons/icons8-circled_play\ 1.svg");
+ }
+ #pause{
+  background-image: url("../icons/icons8-pause_button\ 1.svg");
+ }
+ #forward{
+  background-image: url("../icons/icons8-reset\ 1.svg");
+ }
+ #backward{
+  background-image: url("../icons/icons8-reset\ 2.svg");
+ }
+
+ button:active{
+  transform: scale(.9);
+ }
+.player-visor{
+  position: absolute;
+inset-block-end: 0;
+inset-inline: 0;
+display: flex;
+padding:15px;
+}
+
+.player-visor input{
+  flex: 1;
+}
+.player-overlay{
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  transition: .3s opacity;
+}
+.player:hover .player-overlay{
+opacity: 1;
+}

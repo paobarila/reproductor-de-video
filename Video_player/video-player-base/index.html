@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/index.css">
+  <title>Video Player</title>
+</head>
+<body>
+  <div class="wraper">
+    <div class="player">
+      <video id="video" class="video"  src="../video-player-base/images/production_id_4816732 (1080p).mp4" width="400"></video>
+      <div class="player-overlay">
+      <h2 class="player-tittle">Música para relajarse</h2>
+        <div class="player-accions">
+          <button id="backward" aria-label="atras 10 seg" title="Retroceder 10 segundos"></button>
+          <button id="play" aria-label="play" title="Reproducir"></button>
+          <button hidden id="pause" aria-label="pause" title="Pausar"></button>
+          <button id="forward" aria-label="adelante 10 seg" title="Avanzar 10 segundos"></button>
+        </div>
+        <div class="player-visor">
+      <input type="range" id="progress" min="0" value="0" step="1">
+        </div>
+      </div>
+    </div>    
+  </div>
+<script src="./main.js"></script>
+</body>
+</html>
